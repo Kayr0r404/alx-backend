@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
 """task 0"""
 
-BaseCaching = __import__("base_caching").BaseCaching
+from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
     """inherit from Basecache and
     redefine setter and getter methods for cache class"""
-
-    # def __init__(self):
-    #     """The constructor of the basciCache class"""
-    #     super().__init__()
 
     def put(self, key, item):
         """add value in cache"""
