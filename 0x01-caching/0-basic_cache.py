@@ -8,9 +8,9 @@ class BasicCache(BaseCaching):
     """inherit from Basecache and
     redefine setter and getter methods for cache class"""
 
-    def __init__(self):
-        """The constructor of the basciCache class"""
-        super().__init__()
+    # def __init__(self):
+    #     """The constructor of the basciCache class"""
+    #     super().__init__()
 
     def put(self, key, item):
         """add value in cache"""
