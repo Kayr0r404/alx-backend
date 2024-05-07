@@ -9,6 +9,7 @@ class BasicCache(BaseCaching):
     redefine setter and getter methods for cache class"""
 
     def __init__(self):
+        """The constructor"""
         super().__init__()
 
     def put(self, key, item):
