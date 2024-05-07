@@ -12,9 +12,10 @@ class LIFOCache(BaseCaching):
         """add value in cache"""
         if key and item:
             if self.MAX_ITEMS == len(self.cache_data):
-                first_key_in_cache = list(self.cache_data.keys())[self.MAX_ITEMS - 1]
-                print(f"DISCARD: {first_key_in_cache}")
-                del self.cache_data[first_key_in_cache]
+                last_index = self.MAX_ITEMS - 1
+                lst_key_in_cache = list(self.cache_data.keys())[last_index]
+                print(f"DISCARD: {lst_key_in_cache}")
+                del self.cache_data[lst_key_in_cache]
             self.cache_data[key] = item
 
     def get(self, key):
